@@ -10,14 +10,16 @@ int main() {
 	std::cout << arr3[2] << std::endl;
 	try {
 		std::cout << arr3[-1] << std::endl;
-	} catch (std::exception &e) {(void) e;}
+	} catch (std::exception &e) {
+		std::cout << e.what() << std::endl;
+	}
 	try {
 		std::cout << arr3[10] << std::endl;
-	} catch (std::exception &e) {(void) e;}
-
+	} catch (std::exception &e) {
+		std::cout << e.what() << std::endl;
+	}
 
 	std::cout << arr3.size() << std::endl;
-
 
 	arr3[1] = 10;
 	Array<int> arr4 = arr3;
