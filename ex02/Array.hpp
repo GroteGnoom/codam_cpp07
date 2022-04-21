@@ -22,7 +22,7 @@ template <typename T> class Array {
 		}
 		T &operator[](unsigned int idx) {
 			if (idx < 0 || idx >= _size)
-				throw std::exception();
+				throw std::out_of_range("array");
 			return _data[idx];
 		}
 		unsigned int size() { return _size;}

@@ -2,13 +2,12 @@
 #include "iter.hpp"
 #include <iostream>
 
-int addone(int a) {
-	return a + 1;
+void addone(int &a) {
+	a++;
 }
 
-int print(int a) {
+void print(int &a) {
 	std::cout << a << std::endl;
-	return a;
 }
 
 int main() {
